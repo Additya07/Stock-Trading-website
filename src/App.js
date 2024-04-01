@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React, { useState } from 'react';
+import TradeEntryForm from './components/trade-entry-form/TradeEntryForm.js';
+import TradeListingPage from './components/trade-listing-page/TradeListingPage.js';
+import OrderCreationPage from './components/order-creation/OrderCreationPage.js';
+  
 function App() {
+  // Define state variables
+  const [orders, setOrders] = useState([]);
+
+  // Function to handle trade submission
+  const onTradeSubmit = (formData) => {
+    // Update the orders state with the new trade data
+    setOrders([...orders, formData]);
+  };
+
+  // Function to handle order creation
+  const onCreateOrder = (newOrder) => {
+    setOrders([...orders, newOrder]);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* Trade Entry Form component */}
+      <TradeEntryForm onTradeSubmit={onTradeSubmit} />
+
+      {/* Order Creation Page component (potentially passing orders as prop) */}
+      <OrderCreationPage onCreateOrder={onCreateOrder} orders={orders} />
+
+      <TradeListingPage orders={orders} />
+
+
     </div>
   );
 }

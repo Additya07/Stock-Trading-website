@@ -1,0 +1,15 @@
+.pagination {
+    display: flex; /* Enable Flexbox layout */
+    justify-content: center; /* Horizontally center buttons */
+  }
+  
+  .pagination button {
+    margin: 5px; 
+    border: 2px soldi #fff;
+    border-radius: 5px;
+    color: black;
+    background-color: #fff;
+    padding: 8px;
+    cursor: pointer;
+  }
+  

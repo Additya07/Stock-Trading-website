@@ -1,0 +1,79 @@
+/* OrderCreationPage.css */
+.order-creation-page{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 1.5rem;
+
+}
+.order-creation-container {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  
+  .title> h2 {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 24 px;
+    color: #CA393A;
+    font-family: 'Roboto',sans-serif;
+  }
+  
+  .order-creation-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between      ;
+    align-items: center;
+    width: 80%;
+    padding: 0 1rem;
+  }
+  .form-row-all{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
+  
+  .order-creation-form label {
+    margin-bottom: 5px;
+    color: #CA393A;
+    font-weight: 700;
+  }
+  
+  .order-creation-form input,
+  .order-creation-form select {
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    /* flex-grow: 1; */
+  }
+  
+  .order-creation-form button {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #CA393A;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 10%;
+    height: 6vh;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+  }
+  
+  
+  .order-creation-form button:hover {
+    background-color: #fcf2cd;
+  }
+  

@@ -1,0 +1,76 @@
+
+.form-container {
+    display: flex;
+    flex-direction: ro;
+    box-sizing: border-box;
+    align-items: center;
+    padding: 1rem;
+    margin: .5rem;
+    font-family: 'Roboto', sans-serif;
+
+  }
+  .trade-entry-form > h2{
+    padding: 0 1rem;
+  }
+  
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    flex-direction: row; 
+    font-weight: 600;
+    color: #CA393A;
+  }
+  
+  
+  .form-group {
+    flex-grow: 1;
+    
+  }
+  
+  .form-label {
+    margin-bottom: 5px;
+  }
+  
+  .form-input {
+    width: 80%;
+    padding: 5px;
+    outline: none;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    margin: .5rem 0;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgb(0, 0,.3);
+  }
+  .small-text {
+    font-size: smaller;
+  }
+  .big-text {
+    font-size: larger;
+    font-weight: bold;
+  }
+  .form-input:hover{
+    background-color: #EBF7F8;
+
+  }
+  
+  .form-button {
+    width: 100%;
+    padding: 5px;
+    height: 4.5vh;
+    border-radius: 8px;
+    margin-top: 1rem;
+    cursor: pointer;
+    border: #fcf2cd   ;
+    outline: none;
+    font-weight: 600;
+    color: #CA393A;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgb(0, 0,.3);
+
+  }
+  .form-button:hover{
+    background-color: #fcf2cd;
+  }
+
+  

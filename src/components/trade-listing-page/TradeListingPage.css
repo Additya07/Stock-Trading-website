@@ -1,0 +1,59 @@
+/* Styles for the Trade Listing Page */
+.trade-listing-page {
+    margin: 1rem; /* Add some margin for spacing */
+    padding: 1rem; /* Add some padding for content */
+    border: 1px solid #ddd; /* Add a border around the page */
+    border-radius: 4px; /* Add rounded corners for a nicer look */
+  }
+  
+  .page-heading {
+    margin-bottom: 1rem; /* Add some space below the heading */
+    text-align: center; /* Center align the heading */
+  }
+  
+  .orders-table {
+    width: 100%; /* Make the table fit the container */
+    border-collapse: collapse; /* Remove double borders between cells */
+  }
+  
+  .orders-table th,
+  .orders-table td {
+    padding: 0.5rem 1rem; /* Add padding for content within cells */
+    border: 1px solid #ddd; /* Add borders to table cells */
+    text-align: left; /* Left-align the content */
+  }
+  
+  .orders-table thead th {
+    background-color: #f2f2f2; /* Add a light background for table headers */
+    font-weight: bold; /* Make headers bolder */
+  }
+  
+  .order-row {
+    border-top: 1px solid #ddd; /* Add a top border for each row */
+  }
+  
+  /* Styles for pagination (assuming styles from previous example) */
+  .pagination-container {
+    display: flex;
+    justify-content: center; /* Center align the pagination */
+    margin-top: 1rem; /* Add some space above the pagination */
+  }
+  
+  .page-button {
+    border: none; /* Remove default button border (adjust if needed) */
+    padding: 0.5rem 1rem; /* Adjust padding as desired */
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .page-button:hover {
+    background-color: #ddd; /* Add a hover effect */
+  }
+  
+  .active {
+    background-color: #ccc; /* Highlight the active page number */
+  }
+  
